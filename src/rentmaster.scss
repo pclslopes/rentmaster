@@ -2,9 +2,77 @@
 
 @include mat-core();
 
-$rentmaster-primary: mat-palette($mat-teal, 200);
-$rentmaster-accent:  mat-palette($mat-teal, 50);
+$custom-primary: (
+    50 : #f6fbfb,
+    100 : #e8f5f4,
+    200 : #d9efed,
+    300 : #c9e9e6,
+    400 : #bee4e0,
+    500 : #b2dfdb,
+    600 : #abdbd7,
+    700 : #a2d7d2,
+    800 : #99d2cd,
+    900 : #8acac4,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #f6fffe,
+    A700 : #dcfffc,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
 
+
+
+$custom-accent: (
+    50 : #fffefb,
+    100 : #fffdf6,
+    200 : #fffcf0,
+    300 : #fffaea,
+    400 : #fff9e6,
+    500 : #fff8e1,
+    600 : #fff7dd,
+    700 : #fff6d9,
+    800 : #fff5d5,
+    900 : #fff3cd,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+$rentmaster-primary: mat-palette($custom-primary, 700, 300, 900);
+$rentmaster-accent:  mat-palette($custom-accent, 500, 400, 700);
 $rentmaster-warn:    mat-palette($mat-red);
 
 $rentmaster-theme: mat-light-theme($rentmaster-primary, $rentmaster-accent, $rentmaster-warn);
@@ -12,5 +80,13 @@ $rentmaster-theme: mat-light-theme($rentmaster-primary, $rentmaster-accent, $ren
 @include angular-material-theme($rentmaster-theme);
 
 .navtabs-container{
-  background-color: mat-color($rentmaster-primary);
+  background-color: mat-color($rentmaster-primary, 500);
+}
+
+.mat-list-option:hover, 
+.mat-list-option:focus, 
+.mat-nav-list 
+.mat-list-item:hover, 
+.mat-nav-list .mat-list-item:focus{
+  background-color: mat-color($rentmaster-primary, 00);
 }
