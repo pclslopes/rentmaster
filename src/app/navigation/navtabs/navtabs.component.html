@@ -1,14 +1,24 @@
 <div class="navtabs-container">
-  <nav mat-tab-nav-bar>
-    <span class="toolbar-flex">
-      <mat-tab-group>
-        <mat-tab label="hello 1">Small content 1</mat-tab>
-        <mat-tab label="hello 2">Large content 2</mat-tab>
-        <mat-tab label="hello 3">Large content 3</mat-tab>
-        <mat-tab label="hello 4">Large content 4</mat-tab>
-        <mat-tab label="hello 5">Large content 5</mat-tab>
-        <mat-tab label="hello 6">Large content 6</mat-tab>
-      </mat-tab-group>
-    </span>
+  <nav mat-tab-nav-bar mat-tab-nav-bar fxFlex fxLayout fxLayoutAlign="center center">
+    <a mat-tab-link routerLink="/"
+      routerLinkActive #dashboard="routerLinkActive"
+      [active]="dashboard.isActive">
+      Dashboard
+    </a>
+    <a mat-tab-link routerLink="/properties"
+      routerLinkActive #properties="routerLinkActive"
+      [active]="properties.isActive">
+      Properties
+    </a>
+    <a mat-tab-link routerLink="/"
+      routerLinkActive #dashboard="routerLinkActive"
+      [active]="dashboard.isActive">
+      Bookings
+    </a>
+    <a mat-tab-link routerLink="/"
+      routerLinkActive #dashboard="routerLinkActive"
+      [active]="dashboard.isActive">
+      Expenses
+    </a>
   </nav>
 </div>
