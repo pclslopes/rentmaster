@@ -1,0 +1,17 @@
+@import '~@angular/material/theming';
+
+@mixin sidenav-list-component-theme($rentmaster-theme){
+
+  $primary: map-get($rentmaster-theme, primary);
+  $accent: map-get($rentmaster-theme, accent);
+
+  // all theming styles here (not CSS styles)
+  .mat-list-option:hover, 
+  .mat-list-option:focus, 
+  .mat-nav-list 
+  .mat-list-item:hover, 
+  .mat-nav-list .mat-list-item:focus{
+    background-color: mat-color($rentmaster-primary, 300);
+    color: mat-color($rentmaster-primary, 900);
+  }
+};

@@ -77,18 +77,12 @@ $rentmaster-warn:    mat-palette($mat-red);
 
 $rentmaster-theme: mat-light-theme($rentmaster-primary, $rentmaster-accent, $rentmaster-warn);
 
-@import './app/navigation/navtabs/navtabs.component-theme.scss';
 @include angular-material-theme($rentmaster-theme);
 
 // Navtabs Component SCSS File
+@import './app/navigation/navtabs/navtabs.component-theme.scss';
 @include navtabs-component-theme($rentmaster-theme);
 
-
-.mat-list-option:hover, 
-.mat-list-option:focus, 
-.mat-nav-list 
-.mat-list-item:hover, 
-.mat-nav-list .mat-list-item:focus{
-  background-color: mat-color($rentmaster-primary, 300);
-  color: mat-color($rentmaster-primary, 900);
-}
+// SideNav-List Component SCSS File
+@import './app/navigation/sidenav-list/sidenav-list.component-theme.scss';
+@include sidenav-list-component-theme($rentmaster-theme);
