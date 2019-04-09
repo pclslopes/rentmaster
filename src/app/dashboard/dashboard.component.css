@@ -12,4 +12,9 @@
   color: white;
   border: 1px solid white;
   text-transform: uppercase;
+  border-radius: 4
+}
+
+.header-container{
+  height: 100vh;
 }
