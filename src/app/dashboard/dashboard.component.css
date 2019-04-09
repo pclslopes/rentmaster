@@ -1,0 +1,15 @@
+.container{
+  height: 100vh;
+  background: url("https://cdngeneral.rentcafe.com/dmslivecafe/3/569030/Chestnut%20Park%20stock%20bed(1).jpg?crop=(90,0,206.32941176470564,103)&cropxunits=300&cropyunits=103&quality=85&scale=both&") no-repeat;
+}
+
+.register-now-container{
+  padding: 35px 115px;
+}
+
+.register-now-button{
+  width: 170px;
+  color: white;
+  border: 1px solid white;
+  text-transform: uppercase;
+}
