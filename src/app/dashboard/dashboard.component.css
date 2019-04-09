@@ -1,6 +1,7 @@
-.container{
-  height: 100vh;
+.hero-container{
   background: url("https://cdngeneral.rentcafe.com/dmslivecafe/3/569030/Chestnut%20Park%20stock%20bed(1).jpg?crop=(90,0,206.32941176470564,103)&cropxunits=300&cropyunits=103&quality=85&scale=both&") no-repeat;
+  background-size: cover;
+  height: calc(100vh - 145);
 }
 
 .register-now-container{
@@ -12,9 +13,40 @@
   color: white;
   border: 1px solid white;
   text-transform: uppercase;
-  border-radius: 4
+  border-radius: 4px;
 }
 
 .header-container{
   height: 100vh;
+}
+
+.header-container{
+  padding: 60px 20px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.header-container .mat-display-4{
+  color: white;
+}
+
+.header-container .mat-display-1{
+  margin: 10px;
+}
+
+@media all and(max-width: 768px){
+  .hero-container{
+    height: 90vh;
+  }
+}
+
+@media all and(max-width: 599px){
+  .header-container .mat-display-1{
+    font-size: 1.1rem;
+    line-height: 1.1;
+  }
+  .header-container .mat-display-4{
+    font-size: 3rem;
+    line-height: 1.1;
+  }
 }
